@@ -7,7 +7,7 @@ interface UseScrollAnimationOptions {
   rootMargin?: string;
 }
 
-export function useScrollAnimation({ threshold = 0.1, rootMargin = '0px' }: UseScrollAnimationOptions = {}) {
+export function useScrollAnimation({ threshold = 0.05, rootMargin = '-50px 0px' }: UseScrollAnimationOptions = {}) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 

@@ -12,7 +12,7 @@ interface AnimatedCounterProps {
 }
 
 export function AnimatedCounter({ end, suffix = '', prefix = '', label, isDecimal = false }: AnimatedCounterProps) {
-  const { ref, isVisible } = useScrollAnimation({ threshold: 0.3 });
+  const { ref, isVisible } = useScrollAnimation();
   const count = useAnimatedCounter({ end, duration: 2000, isDecimal, shouldStart: isVisible });
 
   return (

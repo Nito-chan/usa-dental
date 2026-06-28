@@ -2,10 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   turbopack: {
-    root: process.cwd(),
+    root: __dirname,
   },
   images: {
-    formats: ["image/avif", "image/webp"],
+    unoptimized: true,
   },
   async headers() {
     return [
