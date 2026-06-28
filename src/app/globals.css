@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0A7C6D;
+  --color-primary-dark: #086459;
+  --color-secondary: #1A3A5C;
+  --color-accent: #E8F5F3;
+  --color-bg: #FAFAF9;
+  --color-bg-secondary: #F3F4F6;
+  --color-bg-card: #FFFFFF;
+  --color-text: #1C1C1E;
+  --color-text-secondary: #6B7280;
+  --color-text-muted: #9CA3AF;
+  --color-border: #E5E7EB;
+  --color-border-light: #F3F4F6;
+}
+
+:root {
+  --primary: #0A7C6D;
+  --primary-dark: #086459;
+  --secondary: #1A3A5C;
+  --accent: #E8F5F3;
+  --bg: #FAFAF9;
+  --bg-secondary: #F3F4F6;
+  --bg-card: #FFFFFF;
+  --text: #1C1C1E;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+  --border: #E5E7EB;
+  --border-light: #F3F4F6;
+  --transition: 0.2s ease;
+}
+
+.dark {
+  --primary: #14B8A6;
+  --primary-dark: #0D9488;
+  --secondary: #60A5FA;
+  --accent: #0F2D2A;
+  --bg: #0A0A0B;
+  --bg-secondary: #18181B;
+  --bg-card: #1C1C1E;
+  --text: #F5F5F4;
+  --text-secondary: #A1A1AA;
+  --text-muted: #71717A;
+  --border: #27272A;
+  --border-light: #1C1C1E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background var(--transition), color var(--transition);
+}
+
+.glass {
+  background: color-mix(in srgb, var(--bg-card) 80%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.section-padding {
+  padding: 5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 6rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 7rem 2rem;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}

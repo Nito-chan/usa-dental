@@ -1,0 +1,261 @@
+{
+  "site": {
+    "name": "Bright Smile Dentary",
+    "shortName": "Bright Smile",
+    "tagline": "Premium Dental Care",
+    "description": "Expert cosmetic, restorative, and family dentistry in New York City. Board-certified specialists, advanced technology, and genuine compassion.",
+    "url": "https://brightsmiledentary.com",
+    "lang": "en",
+    "themeColor": "#0A7C6D",
+    "logo": "/images/logo.png",
+    "phone": "+1 (212) 555-0199",
+    "email": "hello@brightsmiledentary.com",
+    "address": "123 Madison Avenue, Suite 200, New York, NY 10016",
+    "businessHours": {
+      "weekdays": "Mon–Fri: 8:00 AM – 6:00 PM",
+      "saturday": "Sat: 9:00 AM – 3:00 PM",
+      "sunday": "Sun: Closed"
+    },
+    "social": {
+      "facebook": "https://facebook.com/brightsmiledentary",
+      "instagram": "https://instagram.com/brightsmiledentary",
+      "twitter": "https://twitter.com/brightsmiledentary",
+      "youtube": "https://youtube.com/@brightsmiledentary"
+    },
+    "googleMapsEmbedSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.966309591366!2d-73.9857!3d40.7484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjIiTiA3M8KwNTknMDguNCJX!5e0!3m2!1sen!2sus!4v1"
+  },
+  "theme": {
+    "primaryColor": "#0A7C6D",
+    "secondaryColor": "#1A3A5C",
+    "mode": "light"
+  },
+  "nav": {
+    "links": [
+      { "label": "Home", "href": "#hero" },
+      { "label": "Services", "href": "#services" },
+      { "label": "About", "href": "#about" },
+      { "label": "Team", "href": "#team" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Reviews", "href": "#testimonials" },
+      { "label": "FAQ", "href": "#faq" },
+      { "label": "Contact", "href": "#booking" }
+    ],
+    "cta": { "label": "Book Appointment", "href": "#booking" }
+  },
+  "hero": {
+    "title": [
+      { "text": "Crafting", "type": "normal" },
+      { "text": "Confident,", "type": "highlight" },
+      { "text": "Healthy Smiles", "type": "normal" }
+    ],
+    "description": "Where clinical precision meets a warm, patient-first experience. Premium dental care in New York City, reimagined for your comfort.",
+    "primaryCta": { "label": "Book Free Consultation", "href": "#booking" },
+    "secondaryCta": { "label": "Call Now", "href": "tel:+12125550199" },
+    "stats": [
+      { "value": 15, "suffix": "+", "label": "Years Experience" },
+      { "value": 8000, "suffix": "+", "label": "Happy Patients" },
+      { "value": 10000, "suffix": "+", "label": "Treatments Performed" },
+      { "value": 98, "suffix": "%", "label": "Satisfaction Rate" }
+    ],
+    "trustBadges": [
+      { "icon": "star", "label": "4.9★ Google Rating" },
+      { "icon": "shield", "label": "Board Certified" },
+      { "icon": "check-badge", "label": "HIPAA Compliant" },
+      { "icon": "leaf", "label": "Sterilized Equipment" }
+    ]
+  },
+  "services": [
+    { "id": "01", "icon": "sparkles", "name": "Cosmetic Dentistry", "description": "Veneers, professional whitening, and bonding — your perfect smile, engineered to precision.", "startingPrice": "$500", "featured": true },
+    { "id": "02", "icon": "tooth", "name": "General Dentistry", "description": "Comprehensive exams, cleanings, and preventive care to keep your smile healthy for life.", "startingPrice": "$99", "featured": true },
+    { "id": "03", "icon": "braces", "name": "Orthodontics", "description": "Invisalign, clear aligners, and braces tailored for teens and adults alike.", "startingPrice": "$3,500", "featured": true },
+    { "id": "04", "icon": "heart", "name": "Pediatric Care", "description": "Gentle, child-friendly dentistry that makes little ones feel safe and excited about their smile.", "startingPrice": "$85", "featured": false },
+    { "id": "05", "icon": "grid", "name": "Dental Implants", "description": "Permanent, natural-looking replacements that restore your full smile with lasting confidence.", "startingPrice": "$3,000", "featured": false },
+    { "id": "06", "icon": "clock", "name": "Emergency Care", "description": "Same-day urgent appointments for toothaches, broken teeth, and dental emergencies.", "startingPrice": "$199", "featured": false }
+  ],
+  "beforeAfter": [
+    { "id": "veneers", "label": "Veneers", "imageBefore": "/images/before-after/veneers-before.jpg", "imageAfter": "/images/before-after/veneers-after.jpg", "timeSpent": "2 visits", "service": "Cosmetic Dentistry", "review": "I never thought I'd love my smile. Dr. Carter gave me the confidence I'd been missing for years.", "author": "Jessica L." },
+    { "id": "whitening", "label": "Whitening", "imageBefore": "/images/before-after/whitening-before.jpg", "imageAfter": "/images/before-after/whitening-after.jpg", "timeSpent": "1 session", "service": "Cosmetic Dentistry", "review": "10 shades brighter in one appointment. Absolutely incredible results.", "author": "David R." },
+    { "id": "invisalign", "label": "Invisalign", "imageBefore": "/images/before-after/invisalign-before.jpg", "imageAfter": "/images/before-after/invisalign-after.jpg", "timeSpent": "6 months", "service": "Orthodontics", "review": "The most seamless orthodontic experience. My teeth look amazing and it barely interrupted my life.", "author": "Sophia K." },
+    { "id": "implants", "label": "Implants", "imageBefore": "/images/before-after/implant-before.jpg", "imageAfter": "/images/before-after/implant-after.jpg", "timeSpent": "3 visits", "service": "Dental Implants", "review": "You can't even tell it's not my natural tooth. Life-changing results.", "author": "Michael T." }
+  ],
+  "whyChooseUs": [
+    { "icon": "microscope", "title": "Advanced Technology", "description": "Digital scanning, 3D imaging, and laser dentistry for precise, comfortable treatments." },
+    { "icon": "shield", "title": "Board-Certified Specialists", "description": "Every doctor is board-certified with years of advanced training in their specialty." },
+    { "icon": "heart", "title": "Patient-First Philosophy", "description": "Your comfort matters. Sedation options, warm blankets, and genuine care at every visit." },
+    { "icon": "star", "title": "Proven Results", "description": "4.9★ Google rating from hundreds of happy patients across New York City." },
+    { "icon": "calendar", "title": "Flexible Scheduling", "description": "Early morning, evening, and Saturday appointments — because your time matters." },
+    { "icon": "dollar-sign", "title": "Transparent Pricing", "description": "No hidden fees, no surprises. We accept most major insurance plans and offer financing." }
+  ],
+  "process": [
+    { "id": "01", "icon": "phone", "title": "Book Your Visit", "description": "Schedule online or call us. We'll find a time that fits your busy life — often same-week." },
+    { "id": "02", "icon": "clipboard-check", "title": "Your First Appointment", "description": "A warm welcome, comprehensive exam, digital X-rays, and a conversation about your goals." },
+    { "id": "03", "icon": "file-text", "title": "Personalized Treatment Plan", "description": "We present clear options, transparent pricing, and insurance estimates — no pressure." },
+    { "id": "04", "icon": "sparkles", "title": "Exceptional Care", "description": "Your treatment, delivered with precision and compassion. We're with you every step." },
+    { "id": "05", "icon": "heart", "title": "Your Bright Smile", "description": "Walk out with a healthier, more confident smile — and a reason to keep coming back." }
+  ],
+  "pricing": [
+    {
+      "name": "New Patient Exam",
+      "price": "$99",
+      "period": "",
+      "description": "Complete exam + digital X-rays + oral cancer screening.",
+      "features": [
+        { "text": "Comprehensive dental exam", "included": true },
+        { "text": "Digital X-rays (full series)", "included": true },
+        { "text": "Oral cancer screening", "included": true },
+        { "text": "Professional cleaning", "included": false },
+        { "text": "Treatment consultation", "included": true },
+        { "text": "Insurance filing", "included": true }
+      ],
+      "cta": "Book This Exam",
+      "featured": false,
+      "badge": "Best Value"
+    },
+    {
+      "name": "New Patient Special",
+      "price": "$199",
+      "period": "",
+      "description": "Exam + X-rays + professional cleaning — our most popular package.",
+      "features": [
+        { "text": "Comprehensive dental exam", "included": true },
+        { "text": "Digital X-rays (full series)", "included": true },
+        { "text": "Oral cancer screening", "included": true },
+        { "text": "Professional cleaning & polish", "included": true },
+        { "text": "Fluoride treatment", "included": true },
+        { "text": "Treatment consultation", "included": true },
+        { "text": "Insurance filing", "included": true }
+      ],
+      "cta": "Claim This Offer",
+      "featured": true,
+      "badge": "Most Popular"
+    },
+    {
+      "name": "Cosmetic Consultation",
+      "price": "$150",
+      "period": "",
+      "description": "Smile design consultation with digital preview of your potential results.",
+      "features": [
+        { "text": "Cosmetic consultation with doctor", "included": true },
+        { "text": "Digital smile simulation", "included": true },
+        { "text": "Treatment options review", "included": true },
+        { "text": "Custom treatment plan", "included": true },
+        { "text": "Pricing & timeline estimate", "included": true },
+        { "text": "Financing options discussed", "included": true },
+        { "text": "No commitment required", "included": true }
+      ],
+      "cta": "Book Consultation",
+      "featured": false
+    }
+  ],
+  "testimonials": [
+    { "id": "01", "name": "Jessica L.", "avatar": "/images/team/avatar-1.jpg", "rating": 5, "text": "The most comfortable dental visit I've ever had. Dr. Carter and her team made me feel completely at ease from start to finish. My veneers look stunning.", "city": "Manhattan, NY", "service": "Cosmetic Dentistry" },
+    { "id": "02", "name": "Rahul M.", "avatar": "/images/team/avatar-2.jpg", "rating": 5, "text": "Professional, modern, and genuinely caring. My Invisalign journey was absolutely seamless. I'm thrilled with my new smile.", "city": "Brooklyn, NY", "service": "Orthodontics" },
+    { "id": "03", "name": "Amanda K.", "avatar": "/images/team/avatar-3.jpg", "rating": 5, "text": "Finally a dentist my kids actually like! The pediatric team is incredible — patient, playful, and so gentle. We drive across town just to come here.", "city": "Queens, NY", "service": "Pediatric Care" },
+    { "id": "04", "name": "James T.", "avatar": "/images/team/avatar-4.jpg", "rating": 5, "text": "I was terrified of dentists for 20 years. Bright Smile changed that. They listened, they cared, and they made a root canal... comfortable. Unreal.", "city": "Upper East Side, NY", "service": "General Dentistry" },
+    { "id": "05", "name": "Priya S.", "avatar": "/images/team/avatar-5.jpg", "rating": 5, "text": "Transparent pricing, no pushy upsells, and genuinely excellent care. My implant looks and feels completely natural. I recommend them to everyone.", "city": "Hoboken, NJ", "service": "Dental Implants" },
+    { "id": "06", "name": "Michael D.", "avatar": "/images/team/avatar-6.jpg", "rating": 5, "text": "Emergency appointment at 8pm on a Saturday. They fit me in, fixed the issue, and charged less than I expected. Absolute lifesavers.", "city": "Chelsea, NY", "service": "Emergency Care" }
+  ],
+  "stats": [
+    { "value": 15, "suffix": "+", "label": "Years of Excellence" },
+    { "value": 8000, "suffix": "+", "label": "Happy Patients" },
+    { "value": 10000, "suffix": "+", "label": "Treatments Performed" },
+    { "value": 98, "suffix": "%", "label": "Satisfaction Rate" }
+  ],
+  "team": [
+    { "name": "Dr. Emily Carter", "position": "Lead Cosmetic Dentist", "photo": "/images/team/team-1.jpg", "yearsExperience": 12, "bio": "Dr. Carter is an award-winning cosmetic dentist with advanced training in smile design. She believes every patient deserves a smile they're proud to share." },
+    { "name": "Dr. Liam Brooks", "position": "Orthodontics Specialist", "photo": "/images/team/team-2.jpg", "yearsExperience": 10, "bio": "A certified Invisalign provider with a passion for transforming smiles. Dr. Brooks combines precision with a warm, approachable chairside manner." },
+    { "name": "Dr. Priya Nair", "position": "Pediatric Dentist", "photo": "/images/team/team-3.jpg", "yearsExperience": 8, "bio": "Dr. Nair specializes in making dentistry fun and fear-free for children. Her gentle approach has earned the trust of hundreds of NYC families." },
+    { "name": "Dr. Marcus Chen", "position": "Oral Surgeon", "photo": "/images/team/team-4.jpg", "yearsExperience": 14, "bio": "Board-certified oral surgeon specializing in implants, extractions, and full-mouth rehabilitation. Precision and patient comfort are his trademarks." }
+  ],
+  "serviceAreas": {
+    "center": [40.758, -73.9855],
+    "zoom": 12,
+    "cities": [
+      "Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island",
+      "Hoboken", "Jersey City", "Long Island City", "Astoria",
+      "Williamsburg", "Upper East Side", "Upper West Side", "Chelsea",
+      "SoHo", "Tribeca", "Murray Hill", "Midtown East", "Park Slope"
+    ],
+    "placeholderZip": "10016"
+  },
+  "insurance": [
+    "Delta Dental", "Cigna", "MetLife", "Aetna", "Guardian",
+    "BlueCross BlueShield", "United Concordia", "Humana",
+    "Principal Financial", "Ameritas"
+  ],
+  "faq": [
+    { "question": "Do you accept my insurance?", "answer": "We accept most major dental insurance plans including Delta Dental, Cigna, MetLife, Aetna, Guardian, BlueCross BlueShield, and more. Call us or bring your insurance card to your visit — we'll verify your benefits and provide a clear estimate before any treatment begins." },
+    { "question": "What should I expect at my first visit?", "answer": "Your first visit is all about comfort and clarity. You'll be greeted by our friendly team, complete a comprehensive exam with digital X-rays, and have a conversation with your doctor about your goals. We'll present treatment options with transparent pricing — no pressure, just honest guidance." },
+    { "question": "Do you offer sedation dentistry?", "answer": "Yes. We offer multiple sedation options including nitrous oxide (laughing gas), oral conscious sedation, and IV sedation. We'll recommend the best option based on your anxiety level and treatment complexity." },
+    { "question": "How much does a cleaning cost without insurance?", "answer": "A standard adult cleaning with exam starts at $199. We offer a New Patient Special that includes exam, X-rays, and cleaning for $199. We also offer CareCredit and in-house payment plans to make care accessible." },
+    { "question": "What payment options do you offer?", "answer": "We accept all major credit cards (Visa, Mastercard, Amex, Discover), cash, and CareCredit financing. We also offer in-house payment plans for qualifying treatments. We'll work with you to find a comfortable option." },
+    { "question": "Do you treat children?", "answer": "Absolutely. Dr. Priya Nair leads our pediatric dentistry program, creating a fun, welcoming environment for children of all ages. We recommend first visits by age 1 or within 6 months of the first tooth." },
+    { "question": "What if I have a dental emergency?", "answer": "Call us immediately at +1 (212) 555-0199. We reserve same-day emergency slots for existing and new patients. For after-hours emergencies, follow our voicemail instructions to reach the doctor on call." },
+    { "question": "How long does Invisalign treatment take?", "answer": "Most Invisalign treatments range from 6 to 18 months depending on the complexity of your case. During your free consultation, Dr. Brooks will provide a personalized timeline and digital preview of your expected results." }
+  ],
+  "gallery": [
+    { "src": "/images/gallery/reception.jpg", "alt": "Warm, modern reception area", "label": "Our Reception" },
+    { "src": "/images/gallery/treatment-room.jpg", "alt": "State-of-the-art treatment room", "label": "Treatment Room" },
+    { "src": "/images/gallery/equipment.jpg", "alt": "Modern dental equipment", "label": "Modern Equipment" },
+    { "src": "/images/gallery/exam-room.jpg", "alt": "Comfortable exam room with natural light", "label": "Exam Room" },
+    { "src": "/images/gallery/team-photo.jpg", "alt": "Our friendly dental team", "label": "Our Team" }
+  ],
+  "certifications": [
+    { "name": "ADA Member", "icon": "star" },
+    { "name": "Board Certified", "icon": "shield" },
+    { "name": "HIPAA Compliant", "icon": "lock" },
+    { "name": "Sterilization Certified", "icon": "check-badge" },
+    { "name": "4.9★ Google Rated", "icon": "google" },
+    { "name": "Laser Dentistry Certified", "icon": "zap" }
+  ],
+  "blogPosts": [
+    { "id": "01", "title": "Invisalign vs Braces: Which Is Right for You?", "excerpt": "Both options can give you a straighter smile, but the right choice depends on your lifestyle, budget, and orthodontic needs.", "image": "/images/blog/invisalign-vs-braces.jpg", "date": "June 15, 2026", "slug": "invisalign-vs-braces" },
+    { "id": "02", "title": "The Cost of Avoiding the Dentist", "excerpt": "Skipping regular checkups can cost you more than just your smile. Here's what happens when preventive care is delayed.", "image": "/images/blog/cost-of-avoiding.jpg", "date": "May 22, 2026", "slug": "cost-of-avoiding-dentist" },
+    { "id": "03", "title": "Same-Day Veneers: What to Expect", "excerpt": "Advanced technology now makes it possible to transform your smile in a single visit. Here's how the process works.", "image": "/images/blog/same-day-veneers.jpg", "date": "April 10, 2026", "slug": "same-day-veneers" }
+  ],
+  "footer": {
+    "description": "Bright Smile Dentary is a premier dental practice in Manhattan, NYC. We blend clinical excellence with genuine warmth — because great dental care should never feel intimidating.",
+    "quickLinks": [
+      { "label": "Home", "href": "#hero" },
+      { "label": "Services", "href": "#services" },
+      { "label": "About Us", "href": "#about" },
+      { "label": "Our Team", "href": "#team" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Reviews", "href": "#testimonials" },
+      { "label": "FAQ", "href": "#faq" },
+      { "label": "Contact", "href": "#booking" }
+    ],
+    "serviceLinks": [
+      { "label": "Cosmetic Dentistry", "href": "#services" },
+      { "label": "General Dentistry", "href": "#services" },
+      { "label": "Orthodontics", "href": "#services" },
+      { "label": "Pediatric Care", "href": "#services" },
+      { "label": "Dental Implants", "href": "#services" },
+      { "label": "Emergency Care", "href": "#services" }
+    ],
+    "areaLinks": [
+      { "label": "Manhattan", "href": "#service-areas" },
+      { "label": "Brooklyn", "href": "#service-areas" },
+      { "label": "Queens", "href": "#service-areas" },
+      { "label": "Bronx", "href": "#service-areas" },
+      { "label": "Staten Island", "href": "#service-areas" },
+      { "label": "Hoboken", "href": "#service-areas" }
+    ]
+  },
+  "chatbot": {
+    "name": "Smile Assistant",
+    "greeting": "Hi there! I'm your Bright Smile assistant. How can I help you today? You can ask about our services, pricing, insurance, or book an appointment.",
+    "responses": {
+      "pricing": "Our New Patient Special includes exam, X-rays, and cleaning for just $199. Cosmetic consultations are $150. Want a detailed estimate? Use our booking form or call us!",
+      "booking": "You can book online using our form, or call us at +1 (212) 555-0199. Same-week appointments are often available!",
+      "insurance": "We accept most major plans including Delta Dental, Cigna, MetLife, Aetna, and Guardian. Bring your card to your visit and we'll handle the rest!",
+      "emergency": "If you have a dental emergency, please call us immediately at +1 (212) 555-0199. We reserve same-day slots for urgent cases.",
+      "default": "I'm here to help! Ask me about pricing, booking, insurance, or emergency care. Or use our booking form to schedule your visit!"
+    }
+  },
+  "seo": {
+    "title": "Bright Smile Dentary | Premium Dental Care New York City | Cosmetic & Family Dentistry",
+    "description": "NYC's trusted dental practice. Board-certified specialists in cosmetic dentistry, Invisalign, implants, and family care. 4.9★ rated. Book your visit today!",
+    "keywords": "dentist NYC, cosmetic dentistry New York, Invisalign NYC, dental implants Manhattan, emergency dentist NYC, teeth whitening, veneers New York, family dentist, dental clinic NYC"
+  }
+}
