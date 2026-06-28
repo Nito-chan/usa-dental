@@ -16,8 +16,8 @@ export function FinalCTA({ phone }: FinalCTAProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--text)] leading-[1.1] tracking-tight mb-4 text-balance">
-            Ready for Your <span className="text-[var(--primary)]">Best Smile</span>?
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-[var(--text)] leading-[1.1] tracking-tight mb-4 text-balance">
+            Ready for Your <span className="accent-gradient-text">Best Smile</span>?
           </h2>
           <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-8 max-w-lg mx-auto">
             Book a free consultation today — no commitment, just care. Your smile transformation starts here.

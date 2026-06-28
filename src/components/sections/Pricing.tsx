@@ -10,7 +10,7 @@ interface PricingProps {
 
 export function Pricing({ items }: PricingProps) {
   return (
-    <section id="pricing" className="section-padding">
+    <section id="pricing" className="section-padding bg-[var(--bg-alt)]">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
           label="Pricing"

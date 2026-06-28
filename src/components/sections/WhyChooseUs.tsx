@@ -18,7 +18,7 @@ export function WhyChooseUs({ items }: WhyChooseUsProps) {
           title="A Different Kind of Dental Experience"
           subtitle="We blend clinical excellence with genuine warmth — because great dental care should never feel intimidating."
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {items.map((item, idx) => (
             <motion.div
               key={item.title}
@@ -26,9 +26,9 @@ export function WhyChooseUs({ items }: WhyChooseUsProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.08 }}
-              className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+              className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7 card-hover"
             >
-              <div className="w-10 h-10 rounded-xl bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)] mb-4">
+              <div className="w-10 h-10 rounded-xl bg-[var(--accent)]/10 flex items-center justify-center text-[var(--accent)] mb-4 group-hover:bg-[var(--accent)] group-hover:text-white transition-all duration-300">
                 <ServiceIcon name={item.icon} className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-bold text-[var(--text)] mb-2">{item.title}</h3>

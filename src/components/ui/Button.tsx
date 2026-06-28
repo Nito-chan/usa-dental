@@ -3,7 +3,7 @@
 import { type ReactNode } from 'react';
 
 interface ButtonBaseProps {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'accent';
   size?: 'sm' | 'md' | 'lg';
   children: ReactNode;
   className?: string;
@@ -13,13 +13,14 @@ interface ButtonBaseProps {
   disabled?: boolean;
 }
 
-const base = 'inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary)] disabled:opacity-50 disabled:pointer-events-none select-none';
+const base = 'inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] disabled:opacity-50 disabled:pointer-events-none select-none';
 
 const variants: Record<string, string> = {
-  primary: 'bg-[var(--primary)] text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:brightness-95',
-  secondary: 'bg-[var(--secondary)] text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0',
-  outline: 'border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white hover:-translate-y-0.5 active:translate-y-0',
-  ghost: 'text-[var(--text-secondary)] hover:text-[var(--primary)] hover:bg-[var(--bg-secondary)]',
+  primary: 'bg-[var(--accent)] text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:brightness-95',
+  secondary: 'bg-[var(--text)] text-[var(--bg)] shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0',
+  outline: 'border-2 border-[var(--accent)] text-[var(--text)] hover:bg-[var(--accent)] hover:text-white hover:-translate-y-0.5 active:translate-y-0',
+  ghost: 'text-[var(--text-secondary)] hover:text-[var(--accent)] hover:bg-[var(--bg-alt)]',
+  accent: 'bg-[var(--accent)]/10 text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white hover:-translate-y-0.5 transition-all duration-200',
 };
 
 const sizes: Record<string, string> = {

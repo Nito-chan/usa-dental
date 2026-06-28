@@ -21,7 +21,7 @@ export function About() {
               <Image src="/images/about-clinic.jpg" alt="Bright Smile Dentary clinic interior" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
             </div>
             <div className="absolute -bottom-4 -right-4 bg-[var(--bg-card)] rounded-2xl border border-[var(--border)] shadow-lg p-4 md:p-5 max-w-[180px]">
-              <div className="text-2xl font-bold text-[var(--primary)]">Est. 2009</div>
+              <div className="text-2xl font-bold accent-gradient-text">Est. 2009</div>
               <div className="text-xs text-[var(--text-secondary)]">15+ Years of Smiles</div>
             </div>
           </motion.div>
@@ -53,7 +53,7 @@ export function About() {
                 'HIPAA-compliant, secure patient records',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-[var(--text)]">
-                  <svg className="w-4 h-4 mt-0.5 text-[var(--primary)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-4 h-4 mt-0.5 text-[var(--accent)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                   {item}

@@ -10,7 +10,7 @@ interface FAQProps {
 
 export function FAQ({ items }: FAQProps) {
   return (
-    <section id="faq" className="section-padding">
+    <section id="faq" className="section-padding bg-[var(--bg-alt)]">
       <div className="max-w-3xl mx-auto">
         <SectionHeading
           label="FAQ"

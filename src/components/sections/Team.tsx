@@ -10,7 +10,7 @@ interface TeamProps {
 
 export function Team({ items }: TeamProps) {
   return (
-    <section id="team" className="section-padding bg-[var(--bg-secondary)]">
+    <section id="team" className="section-padding">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
           label="Meet the Experts"

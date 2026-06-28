@@ -17,7 +17,7 @@ export function AnimatedCounter({ end, suffix = '', prefix = '', label, isDecima
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-4xl md:text-5xl font-bold text-[var(--primary)] mb-1" aria-live="polite" aria-atomic="true">
+      <div className="text-4xl md:text-5xl font-bold accent-gradient-text mb-1 font-mono" aria-live="polite" aria-atomic="true">
         {prefix}{isDecimal ? count.toFixed(1) : count}{suffix}
       </div>
       <div className="text-sm text-[var(--text-secondary)] font-medium">{label}</div>

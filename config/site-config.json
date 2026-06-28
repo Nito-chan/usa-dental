@@ -6,7 +6,7 @@
     "description": "Expert cosmetic, restorative, and family dentistry in New York City. Board-certified specialists, advanced technology, and genuine compassion.",
     "url": "https://brightsmiledentary.com",
     "lang": "en",
-    "themeColor": "#0A7C6D",
+    "themeColor": "#C9975E",
     "logo": "/images/logo.png",
     "phone": "+1 (212) 555-0199",
     "email": "hello@brightsmiledentary.com",
@@ -25,8 +25,8 @@
     "googleMapsEmbedSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.966309591366!2d-73.9857!3d40.7484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjIiTiA3M8KwNTknMDguNCJX!5e0!3m2!1sen!2sus!4v1"
   },
   "theme": {
-    "primaryColor": "#0A7C6D",
-    "secondaryColor": "#1A3A5C",
+    "primaryColor": "#C9975E",
+    "secondaryColor": "#2B2825",
     "mode": "light"
   },
   "nav": {

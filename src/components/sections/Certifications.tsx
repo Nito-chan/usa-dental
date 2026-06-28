@@ -10,7 +10,7 @@ interface CertificationsProps {
 
 export function Certifications({ items }: CertificationsProps) {
   return (
-    <section className="section-padding bg-[var(--bg-secondary)]">
+    <section className="py-10 md:py-12 bg-[var(--bg-alt)]">
       <div className="max-w-7xl mx-auto">
         <motion.p
           initial={{ opacity: 0 }}
@@ -20,7 +20,7 @@ export function Certifications({ items }: CertificationsProps) {
         >
           Our Credentials
         </motion.p>
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-3">
           {items.map((cert, idx) => (
             <motion.div
               key={cert.name}
@@ -28,9 +28,9 @@ export function Certifications({ items }: CertificationsProps) {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.06 }}
-              className="flex items-center gap-2.5 px-5 py-3 rounded-xl bg-[var(--bg-card)] border border-[var(--border)] shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+              className="flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-[var(--bg-card)] border border-[var(--border)] hover:border-[var(--accent)]/30 hover:shadow-sm transition-all duration-200"
             >
-              <span className="text-[var(--primary)]"><ServiceIcon name={cert.icon} className="w-5 h-5" /></span>
+              <span className="text-[var(--accent)]"><ServiceIcon name={cert.icon} className="w-4 h-4" /></span>
               <span className="text-sm font-semibold text-[var(--text)]">{cert.name}</span>
             </motion.div>
           ))}

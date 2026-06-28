@@ -14,7 +14,7 @@ export function BeforeAfter({ items }: BeforeAfterProps) {
   const [active, setActive] = useState(items[0]);
 
   return (
-    <section id="before-after" className="section-padding bg-[var(--bg-secondary)]">
+    <section id="before-after" className="section-padding bg-[var(--bg-alt)]">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
           label="Before & After"
@@ -29,8 +29,8 @@ export function BeforeAfter({ items }: BeforeAfterProps) {
               onClick={() => setActive(item)}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                 active.id === item.id
-                  ? 'bg-[var(--primary)] text-white shadow-sm'
-                  : 'bg-[var(--bg-card)] text-[var(--text-secondary)] border border-[var(--border)] hover:border-[var(--primary)] hover:text-[var(--primary)] hover:-translate-y-0.5'
+                  ? 'bg-[var(--accent)] text-white shadow-sm'
+                  : 'bg-[var(--bg-card)] text-[var(--text-secondary)] border border-[var(--border)] hover:border-[var(--accent)] hover:text-[var(--accent)] hover:-translate-y-0.5'
               }`}
             >
               {item.label}
@@ -54,10 +54,10 @@ export function BeforeAfter({ items }: BeforeAfterProps) {
                 afterLabel="After"
               />
               <div className="mt-6 flex flex-wrap items-center gap-3 justify-center text-sm">
-                <span className="px-3.5 py-1.5 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] font-medium text-xs">
+                <span className="px-3.5 py-1.5 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] font-medium text-xs">
                   {active.timeSpent}
                 </span>
-                <span className="px-3.5 py-1.5 rounded-full bg-[var(--secondary)]/10 text-[var(--secondary)] font-medium text-xs">
+                <span className="px-3.5 py-1.5 rounded-full bg-[var(--text)]/5 text-[var(--text-secondary)] font-medium text-xs">
                   {active.service}
                 </span>
                 <span className="text-[var(--text-muted)] text-sm leading-relaxed w-full text-center mt-1">

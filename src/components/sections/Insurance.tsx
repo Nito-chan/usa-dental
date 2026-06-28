@@ -11,7 +11,7 @@ interface InsuranceProps {
 
 export function Insurance({ providers, phone }: InsuranceProps) {
   return (
-    <section id="insurance" className="section-padding bg-[var(--bg-secondary)]">
+    <section id="insurance" className="section-padding bg-[var(--bg-alt)]">
       <div className="max-w-4xl mx-auto">
         <SectionHeading
           label="Insurance & Financing"
@@ -23,13 +23,13 @@ export function Insurance({ providers, phone }: InsuranceProps) {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8 shadow-sm"
+          className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8"
         >
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
             {providers.map((ins) => (
               <span
                 key={ins}
-                className="px-4 py-2 rounded-xl bg-[var(--bg)] border border-[var(--border)] text-sm font-medium text-[var(--text)] hover:border-[var(--primary)]/30 hover:bg-[var(--primary)]/5 transition-all duration-200"
+                className="px-4 py-2 rounded-xl bg-[var(--bg)] border border-[var(--border)] text-sm font-medium text-[var(--text)] hover:border-[var(--accent)]/30 hover:bg-[var(--accent)]/5 transition-all duration-200"
               >
                 {ins}
               </span>
@@ -56,10 +56,10 @@ export function Insurance({ providers, phone }: InsuranceProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="mt-6 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8 shadow-sm"
+          className="mt-6 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8 card-hover"
         >
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-xl bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)]">
+            <div className="w-10 h-10 rounded-xl bg-[var(--accent)]/10 flex items-center justify-center text-[var(--accent)] shrink-0">
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 1v3m0 16v3M4.22 4.22l2.12 2.12m11.32 11.32l2.12 2.12M1 12h3m16 0h3M4.22 19.78l2.12-2.12m11.32-11.32l2.12-2.12" /></svg>
             </div>
             <div>

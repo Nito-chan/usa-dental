@@ -34,7 +34,7 @@ export function ImageCompare({ before, after, beforeLabel = 'Before', afterLabel
   return (
     <div
       ref={containerRef}
-      className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden select-none cursor-ew-resize border border-[var(--border)] bg-[var(--bg-secondary)]"
+      className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden select-none cursor-ew-resize border border-[var(--border)] bg-[var(--bg-alt)]"
       onMouseDown={onMouseDown}
       onMouseUp={onMouseUp}
       onMouseMove={onMouseMove}
@@ -50,15 +50,15 @@ export function ImageCompare({ before, after, beforeLabel = 'Before', afterLabel
       <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}>
         <img src={before} alt={beforeLabel} className="w-full h-full object-cover" draggable={false} />
       </div>
-      <div className="absolute top-0 bottom-0 w-0.5 bg-white shadow-lg" style={{ left: `${sliderPos}%`, transform: 'translateX(-50%)' }}>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#333" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <div className="absolute top-0 bottom-0 w-0.5 shadow-lg" style={{ left: `${sliderPos}%`, transform: 'translateX(-50%)', background: 'var(--accent)' }}>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full shadow-md flex items-center justify-center" style={{ background: 'var(--accent)' }}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <polyline points="15 18 9 12 15 6" />
           </svg>
         </div>
       </div>
-      <span className="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-black/50 text-white text-xs font-medium">{beforeLabel}</span>
-      <span className="absolute top-3 right-3 px-2.5 py-1 rounded-lg bg-black/50 text-white text-xs font-medium">{afterLabel}</span>
+      <span className="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-white text-xs font-medium" style={{ background: 'var(--accent)' }}>{beforeLabel}</span>
+      <span className="absolute top-3 right-3 px-2.5 py-1 rounded-lg text-white text-xs font-medium" style={{ background: 'var(--accent)' }}>{afterLabel}</span>
     </div>
   );
 }

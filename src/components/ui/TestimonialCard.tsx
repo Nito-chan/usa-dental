@@ -13,14 +13,15 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4 }}
-      className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7 min-w-[320px] md:min-w-[380px] shrink-0"
+      className="relative rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7 min-w-[320px] md:min-w-[380px] shrink-0 card-hover"
     >
-      <div className="flex items-center justify-between mb-4">
+      <div className="text-5xl font-display text-[var(--accent)]/20 leading-none mb-2 absolute top-4 right-6 select-none">&rdquo;</div>
+      <div className="flex items-center justify-between mb-4 relative">
         <div className="flex items-center gap-1">
           {Array.from({ length: 5 }).map((_, i) => (
             <svg
               key={i}
-              className={`w-4 h-4 ${i < testimonial.rating ? 'text-amber-400' : 'text-[var(--border)]'}`}
+              className={`w-4 h-4 ${i < testimonial.rating ? 'text-[var(--accent)]' : 'text-[var(--border)]'}`}
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -28,13 +29,13 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
             </svg>
           ))}
         </div>
-        <span className="text-xs text-[var(--text-muted)]">{testimonial.service}</span>
+        <span className="text-xs text-[var(--text-muted)] bg-[var(--bg-alt)] px-2.5 py-1 rounded-full">{testimonial.service}</span>
       </div>
-      <blockquote className="text-sm md:text-base text-[var(--text-secondary)] leading-relaxed mb-4">
+      <blockquote className="text-sm md:text-base text-[var(--text-secondary)] leading-relaxed mb-4 italic">
         &ldquo;{testimonial.text}&rdquo;
       </blockquote>
       <div className="flex items-center gap-3 pt-3 border-t border-[var(--border-light)]">
-        <div className="w-9 h-9 rounded-full overflow-hidden bg-[var(--bg-secondary)] shrink-0">
+        <div className="w-9 h-9 rounded-full overflow-hidden bg-[var(--bg-alt)] shrink-0 ring-1 ring-[var(--border)]">
           <Image src={testimonial.avatar} alt={testimonial.name} width={36} height={36} className="w-full h-full object-cover" />
         </div>
         <div>

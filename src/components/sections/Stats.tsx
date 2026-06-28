@@ -10,14 +10,14 @@ interface StatsProps {
 
 export function Stats({ items }: StatsProps) {
   return (
-    <section className="section-padding">
+    <section className="py-12 md:py-16">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 md:p-8 rounded-2xl bg-[var(--bg-card)] border border-[var(--border)] shadow-sm"
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 p-8 md:p-10 rounded-2xl bg-[var(--bg-alt)] border border-[var(--border)]"
         >
           {items.map((stat) => (
             <AnimatedCounter

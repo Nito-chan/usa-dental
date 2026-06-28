@@ -28,12 +28,12 @@ export function Footer({ footer, site }: FooterProps) {
   };
 
   return (
-    <footer className="bg-[var(--bg-secondary)] border-t border-[var(--border)]">
+    <footer className="bg-[var(--bg-alt)] border-t border-[var(--border)]">
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-[var(--primary)] flex items-center justify-center text-white font-bold text-sm">BS</div>
+              <div className="w-8 h-8 rounded-lg bg-[var(--accent)] flex items-center justify-center text-white font-bold text-sm">BS</div>
               <span className="text-base font-bold text-[var(--text)]">{site.shortName}</span>
             </div>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-5 max-w-sm">
@@ -46,7 +46,7 @@ export function Footer({ footer, site }: FooterProps) {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg bg-[var(--bg)] border border-[var(--border)] flex items-center justify-center text-[var(--text-muted)] hover:text-[var(--primary)] hover:border-[var(--primary)] hover:-translate-y-0.5 transition-all duration-200"
+                  className="w-9 h-9 rounded-lg bg-[var(--bg)] border border-[var(--border)] flex items-center justify-center text-[var(--text-muted)] hover:text-[var(--accent)] hover:border-[var(--accent)] hover:-translate-y-0.5 transition-all duration-200"
                   aria-label={key}
                 >
                   {socialIcons[key]}
@@ -60,7 +60,7 @@ export function Footer({ footer, site }: FooterProps) {
             <ul className="space-y-2.5">
               {footer.quickLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors">{link.label}</a>
+                  <a href={link.href} className="text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">{link.label}</a>
                 </li>
               ))}
             </ul>
@@ -71,7 +71,7 @@ export function Footer({ footer, site }: FooterProps) {
             <ul className="space-y-2.5">
               {footer.serviceLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors">{link.label}</a>
+                  <a href={link.href} className="text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">{link.label}</a>
                 </li>
               ))}
             </ul>
@@ -80,8 +80,8 @@ export function Footer({ footer, site }: FooterProps) {
           <div>
             <h4 className="text-xs font-semibold text-[var(--text)] uppercase tracking-wider mb-4">Contact</h4>
             <ul className="space-y-3 text-sm text-[var(--text-secondary)]">
-              <li><a href={`tel:${site.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-[var(--primary)] transition-colors">{site.phone}</a></li>
-              <li><a href={`mailto:${site.email}`} className="hover:text-[var(--primary)] transition-colors break-all">{site.email}</a></li>
+              <li><a href={`tel:${site.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-[var(--accent)] transition-colors">{site.phone}</a></li>
+              <li><a href={`mailto:${site.email}`} className="hover:text-[var(--accent)] transition-colors break-all">{site.email}</a></li>
               <li className="leading-relaxed">{site.address}</li>
               <li className="pt-2">
                 <span className="font-semibold text-[var(--text)]">Hours</span><br />
@@ -115,7 +115,7 @@ export function Footer({ footer, site }: FooterProps) {
                     {ins}
                   </span>
                 ))}
-                <span className="px-3 py-1.5 rounded-lg bg-[var(--primary)]/5 border border-[var(--primary)]/15 text-xs font-medium text-[var(--primary)]">
+                <span className="px-3 py-1.5 rounded-lg bg-[var(--accent)]/5 border border-[var(--accent)]/15 text-xs font-medium text-[var(--accent)]">
                   + more
                 </span>
               </div>
@@ -126,9 +126,9 @@ export function Footer({ footer, site }: FooterProps) {
         <div className="mt-8 pt-6 border-t border-[var(--border)] flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[var(--text-muted)]">
           <div>&copy; {new Date().getFullYear()} {site.name}. All rights reserved.</div>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-[var(--primary)] transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-[var(--primary)] transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-[var(--primary)] transition-colors">HIPAA Notice</a>
+            <a href="#" className="hover:text-[var(--accent)] transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-[var(--accent)] transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-[var(--accent)] transition-colors">HIPAA Notice</a>
           </div>
         </div>
       </div>
@@ -140,7 +140,7 @@ export function Footer({ footer, site }: FooterProps) {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             onClick={scrollToTop}
-            className="fixed bottom-24 right-4 md:bottom-6 z-30 w-10 h-10 rounded-full bg-[var(--primary)] text-white shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center"
+            className="fixed bottom-24 right-4 md:bottom-6 z-30 w-10 h-10 rounded-full bg-[var(--accent)] text-white shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center"
             aria-label="Back to top"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

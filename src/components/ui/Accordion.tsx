@@ -20,29 +20,34 @@ export function Accordion({ items }: AccordionProps) {
           key={idx}
           className={`rounded-2xl border transition-all duration-200 ${
             openIndex === idx
-              ? 'border-[var(--primary)]/20 bg-[var(--primary)]/5 shadow-sm'
-              : 'border-[var(--border)] bg-[var(--bg-card)] hover:border-[var(--border)]'
+              ? 'border-[var(--accent)]/20 bg-[var(--accent)]/5 shadow-sm'
+              : 'border-[var(--border)] bg-[var(--bg-card)] hover:border-[var(--border-hover)] card-hover'
           }`}
         >
           <button
             onClick={() => toggle(idx)}
-            className="w-full flex items-center justify-between px-5 md:px-6 py-4 md:py-5 text-left text-sm md:text-base font-semibold text-[var(--text)] gap-4"
+            className="w-full flex items-center justify-between px-5 md:px-6 py-4 md:py-5 text-left text-sm md:text-base font-semibold text-[var(--text)] gap-4 focus-ring"
             aria-expanded={openIndex === idx}
           >
             <span>{item.question}</span>
-            <svg
-              className={`w-5 h-5 shrink-0 text-[var(--primary)] transition-transform duration-200 ${
-                openIndex === idx ? 'rotate-180' : ''
-              }`}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
+            <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 transition-all duration-200 ${
+              openIndex === idx ? 'bg-[var(--accent)] text-white' : 'bg-[var(--bg-alt)] text-[var(--text-muted)]'
+            }`}>
+              <svg
+                className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                  openIndex === idx ? 'rotate-180' : ''
+                }`}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </div>
           </button>
           <AnimatePresence>
             {openIndex === idx && (

@@ -27,7 +27,7 @@ export function Testimonials({ items }: TestimonialsProps) {
   }, []);
 
   return (
-    <section id="testimonials" className="section-padding bg-[var(--bg-secondary)] overflow-hidden">
+    <section id="testimonials" className="section-padding overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto">
         <SectionHeading
           label="Patient Stories"
@@ -48,7 +48,7 @@ export function Testimonials({ items }: TestimonialsProps) {
             <div
               className="flex gap-6"
               style={{
-                animation: isVisible && !isPaused ? 'scroll-left 40s linear infinite' : 'none',
+                animation: isVisible && !isPaused ? 'scroll-left 50s linear infinite' : 'none',
                 width: 'max-content',
               }}
             >
@@ -61,7 +61,6 @@ export function Testimonials({ items }: TestimonialsProps) {
           </div>
         </motion.div>
       </div>
-      <style>{`@keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(-33.333%); } }`}</style>
     </section>
   );
 }

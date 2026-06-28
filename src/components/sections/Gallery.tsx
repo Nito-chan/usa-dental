@@ -30,7 +30,7 @@ export function Gallery({ items }: GalleryProps) {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.06 }}
               onClick={() => setSelected(img)}
-              className={`relative rounded-2xl overflow-hidden border border-[var(--border)] group cursor-pointer ${
+              className={`relative rounded-2xl overflow-hidden border border-[var(--border)] group cursor-pointer card-hover ${
                 idx === 0 ? 'col-span-2 row-span-2' : ''
               }`}
               aria-label={`View ${img.label}`}
