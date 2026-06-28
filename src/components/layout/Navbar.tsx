@@ -81,7 +81,7 @@ export function Navbar({ nav, site }: NavbarProps) {
 
             <div className="flex items-center gap-2">
               <a
-                href={`tel:${site.phone}`}
+                href={`tel:${site.phone.replace(/[^0-9+]/g, '')}`}
                 className="hidden md:inline-flex items-center gap-1.5 text-sm font-medium text-[var(--primary)] hover:text-[var(--primary-dark)] transition-colors px-3 py-2"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

@@ -98,7 +98,7 @@ export function BookingForm({ phone }: BookingFormProps) {
               <h3 className="text-2xl font-bold text-[var(--text)] mb-2">Request Received!</h3>
               <p className="text-[var(--text-secondary)] mb-2">We will review your details and confirm your appointment within 24 hours.</p>
               <p className="text-sm text-[var(--text-muted)]">
-                Need immediate assistance? Call us at <a href={`tel:${phone}`} className="text-[var(--primary)] font-medium hover:underline">{phone}</a>
+                Need immediate assistance? Call us at <a href={`tel:${phone.replace(/[^0-9+]/g, '')}`} className="text-[var(--primary)] font-medium hover:underline">{phone}</a>
               </p>
             </motion.div>
           ) : (

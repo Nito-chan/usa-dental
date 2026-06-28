@@ -26,7 +26,7 @@ export function FinalCTA({ phone }: FinalCTAProps) {
             <Button href="#booking" variant="primary" size="lg">
               Book Free Consultation
             </Button>
-            <Button href={`tel:${phone}`} variant="outline" size="lg">
+            <Button href={`tel:${phone.replace(/[^0-9+]/g, '')}`} variant="outline" size="lg">
               Call Now
             </Button>
           </div>

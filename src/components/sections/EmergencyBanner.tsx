@@ -16,7 +16,7 @@ export function EmergencyBanner({ phone }: EmergencyBannerProps) {
     >
       <div className="max-w-4xl mx-auto">
         <a
-          href={`tel:${phone}`}
+          href={`tel:${phone.replace(/[^0-9+]/g, '')}`}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 p-6 rounded-2xl bg-gradient-to-r from-red-500/10 via-red-500/5 to-red-500/10 border border-red-200 dark:border-red-900/30 hover:from-red-500/15 hover:to-red-500/15 transition-all duration-200 group"
         >
           <div className="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center text-red-500 group-hover:scale-110 transition-transform duration-200">

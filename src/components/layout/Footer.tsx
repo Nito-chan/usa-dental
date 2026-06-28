@@ -80,7 +80,7 @@ export function Footer({ footer, site }: FooterProps) {
           <div>
             <h4 className="text-xs font-semibold text-[var(--text)] uppercase tracking-wider mb-4">Contact</h4>
             <ul className="space-y-3 text-sm text-[var(--text-secondary)]">
-              <li><a href={`tel:${site.phone}`} className="hover:text-[var(--primary)] transition-colors">{site.phone}</a></li>
+              <li><a href={`tel:${site.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-[var(--primary)] transition-colors">{site.phone}</a></li>
               <li><a href={`mailto:${site.email}`} className="hover:text-[var(--primary)] transition-colors break-all">{site.email}</a></li>
               <li className="leading-relaxed">{site.address}</li>
               <li className="pt-2">

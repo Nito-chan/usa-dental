@@ -63,7 +63,7 @@ export function MobileMenu({ nav, site, isDark, mounted, onToggleTheme, onClose 
             {nav.cta.label}
           </Button>
           <a
-            href={`tel:${site.phone}`}
+            href={`tel:${site.phone.replace(/[^0-9+]/g, '')}`}
             className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl border border-[var(--border)] text-sm font-semibold text-[var(--text)] hover:bg-[var(--bg-secondary)] transition-colors"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

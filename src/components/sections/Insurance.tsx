@@ -41,7 +41,7 @@ export function Insurance({ providers, phone }: InsuranceProps) {
               Don&apos;t see your plan? Call us — we&apos;ll verify your benefits and provide a clear estimate before your visit.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              <Button href={`tel:${phone}`} variant="outline" size="md">
+              <Button href={`tel:${phone.replace(/[^0-9+]/g, '')}`} variant="outline" size="md">
                 Call to Verify Benefits
               </Button>
               <Button href="#booking" variant="primary" size="md">
